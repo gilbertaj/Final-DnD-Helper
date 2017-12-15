@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/activity_longspear"
+    tools:context=".activities.items.Longspear">
+
+    <TextView
+        android:text="Longspear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView94"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:text="Cost: 5gp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView94"
+        android:layout_alignLeft="@+id/textView94"
+        android:layout_alignStart="@+id/textView94"
+        android:id="@+id/textView102"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Dmg(S): 1d6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView102"
+        android:layout_alignLeft="@+id/textView102"
+        android:layout_alignStart="@+id/textView102"
+        android:id="@+id/textView103"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="DMG(M): 1d8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView103"
+        android:layout_alignLeft="@+id/textView103"
+        android:layout_alignStart="@+id/textView103"
+        android:id="@+id/textView104"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Critical: x3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView104"
+        android:layout_alignLeft="@+id/textView104"
+        android:layout_alignStart="@+id/textView104"
+        android:id="@+id/textView105"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Range: Melee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView105"
+        android:layout_alignLeft="@+id/textView105"
+        android:layout_alignStart="@+id/textView105"
+        android:id="@+id/textView106"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Weight: 9 lbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView106"
+        android:layout_alignLeft="@+id/textView106"
+        android:layout_alignStart="@+id/textView106"
+        android:id="@+id/textView107"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Dmg Type: Piercing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView107"
+        android:layout_alignLeft="@+id/textView107"
+        android:layout_alignStart="@+id/textView107"
+        android:id="@+id/textView108"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Weapon Type: Two-Handed Simple Melee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView108"
+        android:layout_alignLeft="@+id/textView108"
+        android:layout_alignStart="@+id/textView108"
+        android:id="@+id/textView110"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+</RelativeLayout>

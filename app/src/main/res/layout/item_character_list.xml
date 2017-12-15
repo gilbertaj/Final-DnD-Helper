@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="100dp"
+    android:id="@+id/characterItem"
+    android:background="@drawable/selector">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Example Item"
+        android:id="@+id/itemName"
+        android:singleLine="false"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:layout_alignTop="@+id/checkDark"
+        android:layout_toRightOf="@+id/checkDark"
+        android:layout_toEndOf="@+id/checkDark"
+        android:layout_marginLeft="10dp" />
+
+    <net.steamcrafted.materialiconlib.MaterialIconView
+
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:materialIcon="account"
+        app:materialIconColor="@android:color/darker_gray"
+        app:materialIconSize="24dp"
+        android:scaleType="center"
+        android:id="@+id/checkDark"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is just example test, and a fair amount of it too in order to make sure that this layout will look good it something huge is pasted in for the description variable or something, because I think it has a 2 line maximum."
+        android:id="@+id/itemDescription"
+        android:layout_below="@+id/itemName"
+        android:layout_alignStart="@+id/itemName"
+        android:maxLines="2"
+        android:layout_alignLeft="@+id/itemName"
+        android:layout_marginRight="15dp" />
+
+</RelativeLayout>

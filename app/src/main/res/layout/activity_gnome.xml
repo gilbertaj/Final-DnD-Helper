@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/activity_gnome"
+    tools:context=".activities.races.Gnome">
+
+    <TextView
+        android:text="Gnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView50"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:text="Racial Bonuses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView50"
+        android:layout_alignLeft="@+id/textView50"
+        android:layout_alignStart="@+id/textView50"
+        android:id="@+id/textView51"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="+2 Constitution, -2 Strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView51"
+        android:layout_alignLeft="@+id/textView51"
+        android:layout_alignStart="@+id/textView51"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView53"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="-Size: Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView53"
+        android:layout_alignLeft="@+id/textView53"
+        android:layout_alignStart="@+id/textView53"
+        android:id="@+id/textView54"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="-Base Land Speed: 20ft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView54"
+        android:layout_alignLeft="@+id/textView54"
+        android:layout_alignStart="@+id/textView54"
+        android:id="@+id/textView55"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="-Lowlight Vision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView55"
+        android:layout_alignLeft="@+id/textView55"
+        android:layout_alignStart="@+id/textView55"
+        android:id="@+id/textView56"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="-Weapon: gnome hooked hammers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView56"
+        android:layout_alignLeft="@+id/textView56"
+        android:layout_alignStart="@+id/textView56"
+        android:id="@+id/textView57"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="+2 bonus to saving throws against Illusions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView57"
+        android:layout_alignLeft="@+id/textView57"
+        android:layout_alignStart="@+id/textView57"
+        android:id="@+id/textView58"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="+1 attack bonuses against Kobolds and Goblins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView58"
+        android:layout_alignLeft="@+id/textView58"
+        android:layout_alignStart="@+id/textView58"
+        android:id="@+id/textView59"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="+4 dodge bonus against Giant Monsters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView59"
+        android:layout_alignLeft="@+id/textView59"
+        android:layout_alignStart="@+id/textView59"
+        android:id="@+id/textView60"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="+2 bonus to Listen and Craft(alchemy)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView60"
+        android:layout_alignLeft="@+id/textView60"
+        android:layout_alignStart="@+id/textView60"
+        android:id="@+id/textView61"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="-Spell-like Abilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView61"
+        android:layout_alignLeft="@+id/textView61"
+        android:layout_alignStart="@+id/textView61"
+        android:id="@+id/textView62"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="-Favored Class: Bard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView62"
+        android:layout_alignLeft="@+id/textView62"
+        android:layout_alignStart="@+id/textView62"
+        android:id="@+id/textView63"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/yes"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

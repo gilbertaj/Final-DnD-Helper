@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Character Page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#009688"
+        android:id="@+id/tvCharacter" />
+
+    <TextView
+        android:text="Class and Race"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCharacter"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/tvClassRace" />
+
+    <TextView
+        android:text="Strength: 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvClassRace"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/tvStrength" />
+
+    <TextView
+        android:text="Dexterity: 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStrength"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/tvDex" />
+
+    <TextView
+        android:text="Constitution: 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDex"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/tvConst" />
+
+    <TextView
+        android:text="Intelligence: 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvConst"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/tvInt" />
+
+    <TextView
+        android:text="Wisdom: 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInt"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/tvWisdom" />
+
+    <TextView
+        android:text="Charisma: 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWisdom"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/tvCharisma" />
+
+    <Button
+        android:text="-"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvCharacter"
+        android:layout_alignBaseline="@+id/tvStrength"
+        android:layout_alignBottom="@+id/tvStrength"
+        android:layout_toLeftOf="@+id/tvStrength"
+        android:id="@+id/bStrSubtract" />
+
+    <Button
+        android:text="+"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvCharacter"
+        android:layout_alignBaseline="@+id/tvStrength"
+        android:layout_alignBottom="@+id/tvStrength"
+        android:layout_toRightOf="@+id/tvStrength"
+        android:id="@+id/bStrAdd" />
+
+    <Button
+        android:text="-"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvStrength"
+        android:layout_alignBaseline="@+id/tvDex"
+        android:layout_alignBottom="@+id/tvDex"
+        android:layout_toLeftOf="@+id/tvDex"
+        android:id="@+id/bDexSubtract" />
+
+    <Button
+        android:text="+"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvStrength"
+        android:layout_alignBaseline="@+id/tvDex"
+        android:layout_alignBottom="@+id/tvDex"
+        android:layout_toRightOf="@+id/tvDex"
+        android:id="@+id/bDexAdd" />
+
+    <Button
+        android:text="-"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvDex"
+        android:layout_alignBaseline="@+id/tvConst"
+        android:layout_alignBottom="@+id/tvConst"
+        android:layout_toLeftOf="@+id/tvConst"
+        android:id="@+id/bConstSubtract" />
+
+    <Button
+        android:text="+"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvDex"
+        android:layout_alignBaseline="@+id/tvConst"
+        android:layout_alignBottom="@+id/tvConst"
+        android:layout_toRightOf="@+id/tvConst"
+        android:id="@+id/bConstAdd" />
+
+    <Button
+        android:text="-"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvConst"
+        android:layout_alignBaseline="@+id/tvInt"
+        android:layout_alignBottom="@+id/tvInt"
+        android:layout_toLeftOf="@+id/tvInt"
+        android:id="@+id/bIntSubtract" />
+
+    <Button
+        android:text="+"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvConst"
+        android:layout_alignBaseline="@+id/tvInt"
+        android:layout_alignBottom="@+id/tvInt"
+        android:layout_toRightOf="@+id/tvInt"
+        android:id="@+id/bIntAdd" />
+
+    <Button
+        android:text="-"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvInt"
+        android:layout_alignBaseline="@+id/tvWisdom"
+        android:layout_alignBottom="@+id/tvWisdom"
+        android:layout_toLeftOf="@+id/tvWisdom"
+        android:id="@+id/bWisSubtract" />
+
+    <Button
+        android:text="+"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvInt"
+        android:layout_alignBaseline="@+id/tvWisdom"
+        android:layout_alignBottom="@+id/tvWisdom"
+        android:layout_toRightOf="@+id/tvWisdom"
+        android:id="@+id/bWisAdd" />
+
+    <Button
+        android:text="-"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvWisdom"
+        android:layout_alignBaseline="@+id/tvCharisma"
+        android:layout_alignBottom="@+id/tvCharisma"
+        android:layout_toLeftOf="@+id/tvCharisma"
+        android:id="@+id/bCharSubtract" />
+
+    <Button
+        android:text="+"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvWisdom"
+        android:layout_alignBaseline="@+id/tvCharisma"
+        android:layout_alignBottom="@+id/tvCharisma"
+        android:layout_toRightOf="@+id/tvCharisma"
+        android:id="@+id/bCharAdd" />
+
+    <TextView
+        android:text="Character Info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bCharSubtract"
+        android:layout_marginTop="71dp"
+        android:id="@+id/tvDescriptions"
+        android:gravity="center"/>
+
+</RelativeLayout>

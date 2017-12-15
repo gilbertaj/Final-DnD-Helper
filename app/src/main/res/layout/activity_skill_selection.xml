@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statDisguise"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBottom="@+id/tvDisguise"
+        android:layout_alignLeft="@+id/statDisable"
+        android:layout_alignStart="@+id/statDisable" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statDisable"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBottom="@+id/tvDisable"
+        android:layout_alignLeft="@+id/statDiplomacy"
+        android:layout_alignStart="@+id/statDiplomacy" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statDiplomacy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBottom="@+id/tvDiplomacy"
+        android:layout_alignLeft="@+id/statDecipher"
+        android:layout_alignStart="@+id/statDecipher" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statDecipher"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBottom="@+id/tvDecipher"
+        android:layout_alignLeft="@+id/statCraft"
+        android:layout_alignStart="@+id/statCraft" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statCraft"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBaseline="@+id/incCraft"
+        android:layout_alignBottom="@+id/incCraft"
+        android:layout_alignLeft="@+id/statConcentration"
+        android:layout_alignStart="@+id/statConcentration" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statBluff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBaseline="@+id/incBluff"
+        android:layout_alignBottom="@+id/incBluff"
+        android:layout_alignLeft="@+id/statBalance"
+        android:layout_alignStart="@+id/statBalance" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statAppraise"
+        android:layout_alignBaseline="@+id/rankAppraise"
+        android:layout_alignBottom="@+id/rankAppraise"
+        android:layout_toLeftOf="@+id/next"
+        android:layout_toStartOf="@+id/next"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/next" />
+
+    <TextView
+        android:text="Skill Selection:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+         />
+
+    <Button
+        android:text="-"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/decBalance"
+        android:layout_below="@+id/decAppraise"
+        android:layout_toLeftOf="@+id/textView138"
+        android:layout_toStartOf="@+id/textView138"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="+"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/incBalance"
+        android:layout_below="@+id/incAppraise"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <Button
+        android:text="-"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/decBluff"
+        android:layout_below="@+id/decBalance"
+        android:layout_toLeftOf="@+id/textView138"
+        android:layout_toStartOf="@+id/textView138"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="+"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/incBluff"
+        android:layout_below="@+id/incBalance"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <Button
+        android:text="-"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/decClimb"
+        android:layout_below="@+id/decBluff"
+        android:layout_toLeftOf="@+id/textView138"
+        android:layout_toStartOf="@+id/textView138"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="+"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/incClimb"
+        android:layout_below="@+id/incBluff"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <Button
+        android:text="-"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/decConcentration"
+        android:layout_below="@+id/decClimb"
+        android:layout_toLeftOf="@+id/textView138"
+        android:layout_toStartOf="@+id/textView138"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="+"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/incConcentration"
+        android:layout_below="@+id/incClimb"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <Button
+        android:text="-"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/decCraft"
+        android:layout_below="@+id/decConcentration"
+        android:layout_toLeftOf="@+id/textView138"
+        android:layout_toStartOf="@+id/textView138"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="+"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/incCraft"
+        android:layout_below="@+id/incConcentration"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <Button
+        android:text="-"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/decDecipher"
+        android:layout_below="@+id/decCraft"
+        android:layout_toLeftOf="@+id/textView138"
+        android:layout_toStartOf="@+id/textView138"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="+"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/incDecipher"
+        android:layout_below="@+id/incCraft"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <Button
+        android:text="-"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/decDiplomacy"
+        android:layout_below="@+id/decDecipher"
+        android:layout_toLeftOf="@+id/textView138"
+        android:layout_toStartOf="@+id/textView138"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="+"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/incDiplomacy"
+        android:layout_below="@+id/incDecipher"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <Button
+        android:text="-"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/decDisable"
+        android:layout_below="@+id/decDiplomacy"
+        android:layout_toLeftOf="@+id/textView138"
+        android:layout_toStartOf="@+id/textView138"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="+"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/incDisable"
+        android:layout_below="@+id/incDiplomacy"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <Button
+        android:text="-"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/decDisguise"
+        android:layout_below="@+id/decDisable"
+        android:layout_toLeftOf="@+id/textView138"
+        android:layout_toStartOf="@+id/textView138"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="+"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/incDisguise"
+        android:layout_below="@+id/incDisable"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <Button
+        android:text="-"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/decEscape"
+        android:layout_below="@+id/decDisguise"
+        android:layout_toLeftOf="@+id/textView138"
+        android:layout_toStartOf="@+id/textView138"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="+"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/incEscape"
+        android:layout_below="@+id/incDisguise"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+
+    <TextView
+        android:text="Ranks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView138"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignRight="@+id/textView13"
+        android:layout_alignEnd="@+id/textView13"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <Button
+        android:text="-"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/decAppraise"
+        android:layout_below="@+id/textView138"
+        android:layout_toLeftOf="@+id/textView138"
+        android:layout_toStartOf="@+id/textView138"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="+"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/incAppraise"
+        android:layout_below="@+id/textView138"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <TextView
+        android:text="Appraise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAppraise"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/decAppraise"
+        android:layout_alignBottom="@+id/decAppraise"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBalance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/decBalance"
+        android:layout_alignBottom="@+id/decBalance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Bluff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBluff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/decBluff"
+        android:layout_alignBottom="@+id/decBluff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Climb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvClimb"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/decClimb"
+        android:layout_alignBottom="@+id/decClimb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Concentration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvConcentration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/decConcentration"
+        android:layout_alignBottom="@+id/decConcentration"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Craft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCraft"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/decCraft"
+        android:layout_alignBottom="@+id/decCraft"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Decipher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDecipher"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/decDecipher"
+        android:layout_alignBottom="@+id/decDecipher"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Diplomacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDiplomacy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/decDiplomacy"
+        android:layout_alignBottom="@+id/decDiplomacy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Disable Device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDisable"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/decDisable"
+        android:layout_alignBottom="@+id/decDisable"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Disguise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDisguise"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/decDisguise"
+        android:layout_alignBottom="@+id/decDisguise"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Escape Artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEscape"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/decEscape"
+        android:layout_alignBottom="@+id/decEscape"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvAppraise"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rankAppraise"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankBalance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBottom="@+id/tvBalance"
+        android:layout_alignLeft="@+id/rankAppraise"
+        android:layout_alignStart="@+id/rankAppraise" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankBluff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBottom="@+id/tvBluff"
+        android:layout_alignLeft="@+id/rankBalance"
+        android:layout_alignStart="@+id/rankBalance" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankClimb"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBottom="@+id/tvClimb"
+        android:layout_alignLeft="@+id/rankBluff"
+        android:layout_alignStart="@+id/rankBluff" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankConcentration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBottom="@+id/tvConcentration"
+        android:layout_alignLeft="@+id/rankCraft"
+        android:layout_alignStart="@+id/rankCraft" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankCraft"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignTop="@+id/tvCraft"
+        android:layout_alignLeft="@+id/rankClimb"
+        android:layout_alignStart="@+id/rankClimb" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankDecipher"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignTop="@+id/tvDecipher"
+        android:layout_alignLeft="@+id/rankCraft"
+        android:layout_alignStart="@+id/rankCraft" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankDiplomacy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignTop="@+id/tvDiplomacy"
+        android:layout_alignLeft="@+id/rankDecipher"
+        android:layout_alignStart="@+id/rankDecipher" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankDisable"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignTop="@+id/tvDisable"
+        android:layout_alignLeft="@+id/rankDiplomacy"
+        android:layout_alignStart="@+id/rankDiplomacy" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankDisguise"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignTop="@+id/tvDisguise"
+        android:layout_alignLeft="@+id/rankDisable"
+        android:layout_alignStart="@+id/rankDisable" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankEscape"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignTop="@+id/tvEscape"
+        android:layout_alignLeft="@+id/rankDisguise"
+        android:layout_alignStart="@+id/rankDisguise" />
+
+    <TextView
+        android:text="Stat Modifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statModifier"
+        android:layout_above="@+id/incAppraise"
+        android:layout_toRightOf="@+id/incAppraise"
+        android:layout_toEndOf="@+id/incAppraise" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statBalance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBaseline="@+id/rankBalance"
+        android:layout_alignBottom="@+id/rankBalance"
+        android:layout_alignLeft="@+id/statAppraise"
+        android:layout_alignStart="@+id/statAppraise" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statClimb"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignTop="@+id/tvClimb"
+        android:layout_alignLeft="@+id/statConcentration"
+        android:layout_alignStart="@+id/statConcentration" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statConcentration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBaseline="@+id/incConcentration"
+        android:layout_alignBottom="@+id/incConcentration"
+        android:layout_alignLeft="@+id/statBluff"
+        android:layout_alignStart="@+id/statBluff" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statEscape"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBaseline="@+id/rankEscape"
+        android:layout_alignBottom="@+id/rankEscape"
+        android:layout_alignLeft="@+id/statDisguise"
+        android:layout_alignStart="@+id/statDisguise" />
+
+    <TextView
+        android:text="Points:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/decEscape"
+        android:layout_alignRight="@+id/tvDecipher"
+        android:layout_alignEnd="@+id/tvDecipher"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView120"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView120"
+        android:layout_toRightOf="@+id/tvDiplomacy"
+        android:layout_toEndOf="@+id/tvDiplomacy"
+        android:id="@+id/points"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+</RelativeLayout>

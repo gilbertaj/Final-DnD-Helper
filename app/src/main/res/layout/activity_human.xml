@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/activity_human"
+    tools:context=".activities.races.Human">
+
+    <TextView
+        android:text="Human"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tvStrength"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:text="Racial Bonuses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStrength"
+        android:layout_alignLeft="@+id/tvStrength"
+        android:layout_alignStart="@+id/tvStrength"
+        android:id="@+id/textView16"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_marginTop="17dp"
+        android:id="@+id/tvConst"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="-Size: Medium" />
+
+    <TextView
+        android:text="-Base Land Speed: 30 ft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvConst"
+        android:layout_alignLeft="@+id/tvConst"
+        android:layout_alignStart="@+id/tvConst"
+        android:id="@+id/tvInt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="-1 Extra Feat at first level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInt"
+        android:layout_alignLeft="@+id/tvInt"
+        android:layout_alignStart="@+id/tvInt"
+        android:id="@+id/tvWisdom"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="-4 Extra Skill Points at first level and 1 extra skill point at every level after"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWisdom"
+        android:layout_alignLeft="@+id/tvWisdom"
+        android:layout_alignStart="@+id/tvWisdom"
+        android:id="@+id/tvCharisma"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="-Favored Class: Any"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCharisma"
+        android:layout_alignLeft="@+id/tvCharisma"
+        android:layout_alignStart="@+id/tvCharisma"
+        android:id="@+id/textView73"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/yes"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

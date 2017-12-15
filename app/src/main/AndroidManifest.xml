@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.najia13.tester">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/d20teal"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CharacterActivity"
+            android:label="@string/title_activity_other"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.DiceActivity"
+            android:label="@string/title_activity_dice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CreateCharacterActivity"
+            android:label="Create A Character"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ItemsActivity"
+            android:label="Items"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SpellsActivity"
+            android:label="Spells"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.FeatsActivity"
+            android:label="Feats"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.NotesActivity"
+            android:label="Notes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SkillSelection" />
+        <activity android:name=".activities.FeatSelection" />
+        <activity android:name=".activities.SpellSelection" />
+        <activity android:name=".activities.ItemSelection" />
+        <activity android:name=".activities.BackgroundSelection" />
+        <activity android:name=".activities.RaceSelection" />
+        <activity android:name=".activities.ClassSelection" />
+        <activity android:name=".activities.CharacterInfo" />
+        <activity android:name=".activities.classes.Barbarian" />
+        <activity android:name=".activities.classes.Bard" />
+        <activity android:name=".activities.classes.Cleric" />
+        <activity android:name=".activities.classes.Druid" />
+        <activity android:name=".activities.classes.Fighter" />
+        <activity android:name=".activities.classes.Monk" />
+        <activity android:name=".activities.classes.Paladin" />
+        <activity android:name=".activities.classes.Ranger" />
+        <activity android:name=".activities.classes.Rogue" />
+        <activity android:name=".activities.classes.Sorcerer" />
+        <activity android:name=".activities.classes.Wizard" />
+        <activity android:name=".activities.races.Human" />
+        <activity android:name=".activities.races.Dwarf" />
+        <activity android:name=".activities.races.Elf" />
+        <activity android:name=".activities.races.Gnome" />
+        <activity android:name=".activities.races.HalfElf" />
+        <activity android:name=".activities.races.HalfOrc" />
+        <activity android:name=".activities.races.Halfling" />
+        <activity android:name=".activities.items.LongSword" />
+        <activity android:name=".activities.items.ShortSword" />
+        <activity android:name=".activities.items.Club" />
+        <activity android:name=".activities.items.CrossbowBolts" />
+        <activity android:name=".activities.items.CrossbowHeavy" />
+        <activity android:name=".activities.items.CrossbowLight" />
+        <activity android:name=".activities.items.Dagger" />
+        <activity android:name=".activities.items.DaggerPunching" />
+        <activity android:name=".activities.items.Darts" />
+        <activity android:name=".activities.items.Gauntlet" />
+        <activity android:name=".activities.items.GauntletSpiked" />
+        <activity android:name=".activities.items.Javelin" />
+        <activity android:name=".activities.items.Longspear" />
+        <activity android:name=".activities.items.MaceHeavy" />
+        <activity android:name=".activities.items.MaceLight" />
+        <activity android:name=".activities.items.Morningstar" />
+        <activity android:name=".activities.items.Quarterstaff" />
+        <activity android:name=".activities.items.Shortspear" />
+        <activity android:name=".activities.items.Sickle" />
+        <activity android:name=".activities.items.Sling" />
+        <activity android:name=".activities.items.SlingBullets" />
+        <activity android:name=".activities.items.Spear" />
+        <activity android:name=".activities.AttributeActivity" />
+        <activity android:name=".activities.attributes.GenerateAttributes" />
+        <activity android:name=".activities.attributes.InputAttributes" />
+        <activity android:name=".activities.spells.ConjureElemental" />
+        <activity android:name=".activities.spells.Maze" />
+        <activity android:name=".activities.spells.MagicCircle" />
+        <activity android:name=".activities.FeatDetail" />
+        <activity android:name=".activities.SpellDetail"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/activity_halfling"
+    tools:context=".activities.races.Halfling">
+
+    <TextView
+        android:text="Halfling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView82"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:text="Racial Bonuses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView82"
+        android:layout_alignLeft="@+id/textView82"
+        android:layout_alignStart="@+id/textView82"
+        android:id="@+id/textView83"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="+2 Dexterity, -2 Strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView83"
+        android:layout_alignLeft="@+id/textView83"
+        android:layout_alignStart="@+id/textView83"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView84"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="-Size: Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView84"
+        android:layout_alignLeft="@+id/textView84"
+        android:layout_alignStart="@+id/textView84"
+        android:id="@+id/textView85"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="-Base Land Speed: 30ft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView85"
+        android:layout_alignLeft="@+id/textView85"
+        android:layout_alignStart="@+id/textView85"
+        android:id="@+id/textView86"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="+2 on Climb, Jump, and Move Silently"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView86"
+        android:layout_alignLeft="@+id/textView86"
+        android:layout_alignStart="@+id/textView86"
+        android:id="@+id/textView87"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="+1 on all saving throws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView87"
+        android:layout_alignLeft="@+id/textView87"
+        android:layout_alignStart="@+id/textView87"
+        android:id="@+id/textView88"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="+2 on saving throws against fear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView88"
+        android:layout_alignLeft="@+id/textView88"
+        android:layout_alignStart="@+id/textView88"
+        android:id="@+id/textView89"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="+1 attack with thrown weapons and slings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView90"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_below="@+id/textView89"
+        android:layout_alignLeft="@+id/textView89"
+        android:layout_alignStart="@+id/textView89" />
+
+    <TextView
+        android:text="+2 on Listen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView90"
+        android:layout_alignLeft="@+id/textView90"
+        android:layout_alignStart="@+id/textView90"
+        android:id="@+id/textView91"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="-Favored Class: Rogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView91"
+        android:layout_alignLeft="@+id/textView91"
+        android:layout_alignStart="@+id/textView91"
+        android:id="@+id/textView92"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/yes"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

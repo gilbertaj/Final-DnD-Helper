@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Attributes:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView16"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:text="Strength:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/tvStrength"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:text="Dexterity:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStrength"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/tvDex"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:text="Constitution:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDex"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tvConst"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:text="Intelligence:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvConst"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvInt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:text="Charisma:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWisdom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tvCharisma"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etWisdom"
+        android:layout_below="@+id/tvInt"
+        android:layout_alignLeft="@+id/etIntelligence"
+        android:layout_alignStart="@+id/etIntelligence"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etStrength"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="0"
+        android:layout_alignBaseline="@+id/tvStrength"
+        android:layout_alignBottom="@+id/tvStrength"
+        android:layout_toRightOf="@+id/tvConst"
+        android:layout_toEndOf="@+id/tvConst"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etDexterity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="0"
+        android:layout_alignBaseline="@+id/tvDex"
+        android:layout_alignBottom="@+id/tvDex"
+        android:layout_alignLeft="@+id/etStrength"
+        android:layout_alignStart="@+id/etStrength" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etConstitution"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="0"
+        android:layout_alignBaseline="@+id/tvConst"
+        android:layout_alignBottom="@+id/tvConst"
+        android:layout_alignLeft="@+id/etDexterity"
+        android:layout_alignStart="@+id/etDexterity" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etIntelligence"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/tvConst"
+        android:layout_alignLeft="@+id/etConstitution"
+        android:layout_alignStart="@+id/etConstitution" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etCharisma"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/etWisdom"
+        android:layout_alignLeft="@+id/etWisdom"
+        android:layout_alignStart="@+id/etWisdom" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etIntelligence"
+        android:layout_alignLeft="@+id/intelligenceMod"
+        android:layout_alignStart="@+id/intelligenceMod"
+        android:id="@+id/wisdomMod"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvCharisma"
+        android:layout_alignLeft="@+id/wisdomMod"
+        android:layout_alignStart="@+id/wisdomMod"
+        android:id="@+id/charismaMod"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="-" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvDex"
+        android:layout_toRightOf="@+id/textView16"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:id="@+id/strengthMod"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvConst"
+        android:layout_alignLeft="@+id/strengthMod"
+        android:layout_alignStart="@+id/strengthMod"
+        android:id="@+id/dexterityMod"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvConst"
+        android:layout_alignLeft="@+id/dexterityMod"
+        android:layout_alignStart="@+id/dexterityMod"
+        android:id="@+id/constitutionMod"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etWisdom"
+        android:layout_alignLeft="@+id/constitutionMod"
+        android:layout_alignStart="@+id/constitutionMod"
+        android:id="@+id/intelligenceMod"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvCharisma"
+        android:layout_alignLeft="@+id/wisdomMod"
+        android:layout_alignStart="@+id/wisdomMod"
+        android:id="@+id/charismaMod"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:text="Low-Powered"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/low"
+        android:layout_marginBottom="32dp"
+        android:layout_above="@+id/save"
+        android:layout_toLeftOf="@+id/etCharisma"
+        android:layout_toStartOf="@+id/etCharisma"
+        android:layout_weight="1"/>
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:layout_marginBottom="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Wisdom:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWisdom"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_below="@+id/etIntelligence"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Normal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/normal"
+        android:layout_weight="1"
+        android:layout_alignBaseline="@+id/low"
+        android:layout_alignBottom="@+id/low"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="High-Powered"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/high"
+        android:layout_weight="1"
+        android:layout_alignBaseline="@+id/normal"
+        android:layout_alignBottom="@+id/normal"
+        android:layout_toRightOf="@+id/normal"
+        android:layout_toEndOf="@+id/normal" />
+
+
+</RelativeLayout>

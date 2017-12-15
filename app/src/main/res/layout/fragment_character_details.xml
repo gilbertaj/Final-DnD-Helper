@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Character Details!"
+            android:id="@+id/textView7"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/accent"
+            android:textSize="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:text="Now, um, usually I don't do this but uh....\n
+Go head' on and break em off wit a lil' preview of the remix....\n\n
+
+No I'm not trying to be rude,\n
+But hey pretty girl I'm feeling you\n
+The way you do the things you do\n
+Reminds me of my Lexus coupe\n
+That's why I'm all up in yo grill\n
+Tryina get you to a hotel\n
+You must be a football coach\n
+The way you got me playing the field\n
+\n
+So baby gimme that toot toot\n
+Lemme give you that beep beep\n
+Running her hands through my 'fro\n
+Bouncing on 24's\n
+While they say on the radio...\n\n
+
+It's the remix to ignition\n
+Hot and fresh out the kitchen\n
+Mama rolling that body\n
+got every man in here wishing\n
+Sipping on coke and rum\n
+I'm like so what I'm drunk\n
+It's the freaking weekend baby\n
+I'm about to have me some fun\n\n
+
+Bounce Bounce Bounce Bounce Bounce Bounce Bounce
+Bounce Bounce Bounce\n\n
+
+Now it's like murder she wrote\n
+Once I get you out them clothes\n
+Privacy is on the door\n
+Still they can hear you screaming more\n
+Girl I'm feeling what you feeling\n
+No more hoping and wishing\n
+I'm bout to take my key and\n
+Stick it in the ignition\n\n
+
+So baby gimme that toot toot\n
+Lemme give you that beep beep\n
+Running her hands through my 'fro\n
+Bouncing on 24's\n
+While they say on the radio...\n\n
+
+It's the remix to ignition\n
+Hot and fresh out the kitchen\n
+Mama rolling that body\n
+Got every man in here wishing\n
+Sipping on coke and rum\n
+I'm like so what I'm drunk\n
+It's the freaking weekend baby\n
+I'm about to have me some fun\n\n
+
+Cristal popping in the stretch Navigator\n
+We got food everywhere\n
+As if the party was catered\n
+We got fellas to my left\n
+Hunnies on my right\n
+We bring em both together we got junking all night\n
+Then after the show it's the (after party)\n
+And after the party its the (hotel lobby)\n
+And round about 4 you gotta (clear the lobby)\n
+Then head take it to the room and freak somebody\n\n
+
+Can I get a toot toot\n
+Can I get a beep beep\n
+Running her hands through my 'fro\n
+Bouncing on 24's\n
+While they say on the radio...\n\n
+
+It's the remix to ignition\n
+Hot and fresh out the kitchen\n
+Mama rolling that body\n
+Got every man in here wishing\n
+Sipping on coke and rum\n
+I'm like so what I'm drunk\n
+It's the freaking weekend baby\n
+I'm about to have me some fun\n\n
+
+It's the remix to ignition\n
+Hot and fresh out the kitchen\n
+Mama rolling that body\n
+Got every man in here wishing\n
+Sipping on coke and rum\n
+I'm like so what I'm drunk\n
+It's the freaking weekend baby\n
+I'm about to have me some fun\n\n
+
+Girl we off in this jeep\n
+Fogging windows up\n
+Blasting the radio\n
+In the back of my truck\n
+Bouncing up and down\n
+Stroke it round and round\n
+To the remix\n
+We just thuggin it out...\n
+"
+            android:id="@+id/textView8"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+</ScrollView>

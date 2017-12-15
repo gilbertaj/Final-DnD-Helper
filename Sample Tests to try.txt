@@ -1,0 +1,55 @@
+@Rule
+    public ActivityTestRule<MainActivity>activityTestRule = new ActivityTestRule<MainActivity>(MainActivity.class);
+
+    @Test
+    public void launchCharacterCreator() throws Exception {
+        //Arrange
+        String buttonCharacterCreation = "Create A Character";
+
+        //Act
+        onView(withId(R.id.fragment_container)).perform(click());
+
+        //Assert
+        onView(withText(buttonCharacterCreation)).check(matches(notNullValue()));
+    }
+
+	
+	
+
+
+
+
+@Rule
+    public ActivityTestRule<MainActivity>activityTestRule = new ActivityTestRule<MainActivity>(MainActivity.class);
+
+    @Test
+    public void launchDiceRoller() throws Exception {
+        //Arrange
+        String buttonDice = "Roll!";
+
+        //Act
+        onView(withId(R.id.physicsLayout)).perform(click());
+
+        //Assert
+        onView(withText(buttonDice)).check(matches(notNullValue()));
+    }
+	
+@Rule
+    public ActivityTestRule<MainActivity>activityTestRule = new ActivityTestRule<MainActivity>(MainActivity.class);
+
+    @Test
+    public void launchItems() throws Exception {
+        //Arrange
+        String buttonItems = "com.example.najia13.tester.activities.Items";
+
+        //Act
+        onView(withId(R.id.fab)).perform(click());
+
+        //Assert
+        onView(withText(buttonItems)).check(matches(notNullValue()));
+    }	
+	
+	
+	
+	
+	

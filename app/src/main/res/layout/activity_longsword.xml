@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/activity_longsword"
+    tools:context=".activities.items.LongSword">
+
+    <TextView
+        android:text="Long Sword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView93"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Cost: 15gp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView93"
+        android:layout_alignLeft="@+id/textView93"
+        android:layout_alignStart="@+id/textView93"
+        android:id="@+id/textView95"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Dmg(s): 1d6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView95"
+        android:layout_alignLeft="@+id/textView95"
+        android:layout_alignStart="@+id/textView95"
+        android:id="@+id/textView96"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Dmg(M): 1d8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView96"
+        android:layout_alignLeft="@+id/textView96"
+        android:layout_alignStart="@+id/textView96"
+        android:id="@+id/textView97"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Critical: 19-20/x2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView97"
+        android:layout_alignLeft="@+id/textView97"
+        android:layout_alignStart="@+id/textView97"
+        android:id="@+id/textView98"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Range: Melee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView98"
+        android:layout_alignLeft="@+id/textView98"
+        android:layout_alignStart="@+id/textView98"
+        android:id="@+id/textView99"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Weight: 4 lbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView99"
+        android:layout_alignLeft="@+id/textView99"
+        android:layout_alignStart="@+id/textView99"
+        android:id="@+id/textView100"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Dmg Type: Slashing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView100"
+        android:layout_alignLeft="@+id/textView100"
+        android:layout_alignStart="@+id/textView100"
+        android:id="@+id/textView101"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Weapon Type: One-Handed Martial Melee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView101"
+        android:layout_alignLeft="@+id/textView101"
+        android:layout_alignStart="@+id/textView101"
+        android:id="@+id/textView109"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Gender:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/tvGender"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="Height:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/tvHeight"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="Hair Color:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHairColor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_below="@+id/tvSkinColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="Age:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAge"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/tvName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Weight:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeight"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvWeight"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="Eye Color:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEyeColor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tvHairColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Alignment:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEyeColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvAlignment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:text="Deity:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDeity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_below="@+id/tvAlignment"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:text="Skin Color:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/tvSkinColor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_below="@+id/tvWeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etEyeColor"
+        android:layout_alignBaseline="@+id/tvEyeColor"
+        android:layout_alignBottom="@+id/tvEyeColor"
+        android:layout_toRightOf="@+id/tvEyeColor"
+        android:layout_toEndOf="@+id/tvEyeColor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/tvEyeColor"
+        android:layout_toRightOf="@+id/tvAlignment"
+        android:layout_toEndOf="@+id/tvAlignment"
+        android:id="@+id/etAlignment" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etSkinColor"
+        android:layout_alignBaseline="@+id/tvSkinColor"
+        android:layout_alignBottom="@+id/tvSkinColor"
+        android:layout_toRightOf="@+id/tvSkinColor"
+        android:layout_toEndOf="@+id/tvSkinColor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etAge"
+        android:layout_alignBaseline="@+id/tvAge"
+        android:layout_alignBottom="@+id/tvAge"
+        android:layout_toRightOf="@+id/tvAge"
+        android:layout_toEndOf="@+id/tvAge" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etGender"
+        android:layout_alignBaseline="@+id/tvGender"
+        android:layout_alignBottom="@+id/tvGender"
+        android:layout_toRightOf="@+id/tvGender"
+        android:layout_toEndOf="@+id/tvGender" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etHeight"
+        android:layout_alignBaseline="@+id/tvHeight"
+        android:layout_alignBottom="@+id/tvHeight"
+        android:layout_toRightOf="@+id/tvHeight"
+        android:layout_toEndOf="@+id/tvHeight" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etWeight"
+        android:layout_alignBaseline="@+id/tvWeight"
+        android:layout_alignBottom="@+id/tvWeight"
+        android:layout_toRightOf="@+id/tvWeight"
+        android:layout_toEndOf="@+id/tvWeight" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etDeity"
+        android:layout_alignBaseline="@+id/tvDeity"
+        android:layout_alignBottom="@+id/tvDeity"
+        android:layout_toRightOf="@+id/tvDeity"
+        android:layout_toEndOf="@+id/tvDeity" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etHair"
+        android:layout_alignBaseline="@+id/tvHairColor"
+        android:layout_alignBottom="@+id/tvHairColor"
+        android:layout_toRightOf="@+id/tvHairColor"
+        android:layout_toEndOf="@+id/tvHairColor" />
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/save" />
+</RelativeLayout>
