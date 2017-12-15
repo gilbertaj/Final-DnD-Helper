@@ -4,6 +4,9 @@ package com.example.najia13.tester.TDD;
  * Created by Andrew on 12/4/2016.
  */
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.support.test.InstrumentationRegistry;
 import android.support.test.espresso.matcher.ViewMatchers;
 import android.test.ActivityInstrumentationTestCase2;
 import android.widget.TextView;
@@ -18,7 +21,7 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static org.hamcrest.core.AllOf.allOf;
 
 public class attributeSubtractTest extends ActivityInstrumentationTestCase2<CharacterActivity> {
-
+    Context mContext = InstrumentationRegistry.getTargetContext();
     CharacterActivity mActivity;
     private TextView strength;
 
@@ -29,6 +32,10 @@ public class attributeSubtractTest extends ActivityInstrumentationTestCase2<Char
 
     @Override
     protected void setUp() throws Exception {
+        SharedPreferences character = mContext.getSharedPreferences("Character", 0);
+        SharedPreferences.Editor editor = character.edit();
+        editor.putString("Strength", Integer.toString(10));
+        editor.commit();
         super.setUp();
         mActivity = this.getActivity();
 
@@ -62,7 +69,6 @@ public class attributeSubtractTest extends ActivityInstrumentationTestCase2<Char
         }
 
         int after = Integer.parseInt(subString) + 1;
-
         assertEquals(before, after);
     }
 }

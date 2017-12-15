@@ -31,15 +31,15 @@ public class SpellSelectionTest {
     public ActivityTestRule<FeatSelection> mActivityRule = new ActivityTestRule(FeatSelection.class);
 
     @Test
-    public void checkMaze() {
+    public void checkResistance() {
         //Arrange
         SharedPreferences character = mContext.getSharedPreferences("Character", 0);
         SharedPreferences.Editor editor = character.edit();
-        String spell = "Maze";
+        String spell = "Resistance";
         Boolean isSelected;
 
         //Act
-        editor.putString("Class", "Rogue");
+        editor.putString("Class", "Sorcerer");
         editor.commit();
         onView(withId(R.id.next)).perform(click());
         onView(allOf(withText(spell))).perform(click());
@@ -51,40 +51,40 @@ public class SpellSelectionTest {
     }
 
     @Test
-    public void checkMagicCircle() {
+    public void checkDetectMagic() {
         //Arrange
         SharedPreferences character = mContext.getSharedPreferences("Character", 0);
         SharedPreferences.Editor editor = character.edit();
-        String spell = "Magic Circle";
+        String spell = "Detect Magic";
         Boolean isSelected;
 
         //Act
-        editor.putString("Class", "Rogue");
+        editor.putString("Class", "Cleric");
         editor.commit();
         onView(withId(R.id.next)).perform(click());
         onView(allOf(withText(spell))).perform(click());
         onView(withId(R.id.next)).perform(click());
-        isSelected = character.getBoolean("MagicCircle", false);
+        isSelected = character.getBoolean("Detect Magic", false);
 
         //Assert
         Assert.assertTrue(isSelected);
     }
 
     @Test
-    public void checkConjureElemental() {
+    public void checkDancingLights() {
         //Arrange
         SharedPreferences character = mContext.getSharedPreferences("Character", 0);
         SharedPreferences.Editor editor = character.edit();
-        String spell = "Conjure Elemental";
+        String spell = "Dancing Lights";
         Boolean isSelected;
 
         //Act
-        editor.putString("Class", "Rogue");
+        editor.putString("Class", "Bard");
         editor.commit();
         onView(withId(R.id.next)).perform(click());
         onView(allOf(withText(spell))).perform(click());
         onView(withId(R.id.next)).perform(click());
-        isSelected = character.getBoolean("ConjureElemental", false);
+        isSelected = character.getBoolean("Dancing Lights", false);
 
         //Assert
         Assert.assertTrue(isSelected);
