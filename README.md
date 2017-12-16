@@ -1,17 +1,12 @@
- # Links-Rocket-cmsc355-android-app
-cmsc355-android-app created for Links-Rocket
+ # DnD Helper
+This App allows you to create and manage a D&D character.
 
+When you first run the app click the Create Character option and fill out all the steps.
 
-The user stories that we completed this iteration were UserStory9_DieRoller, UserStory MainMenu, UserStory3_ClassSelection, and 
-UserStory8_NameAppearanceAndBackground.
+The Items option will show you all of your characters current items. The Spells and Feats options will also show you all of your character's current spells and feats. Clicking on a specific spell, feat, or item will bring up details about it.
 
-In order to set up a good foundation for the app in coming iterations, all of the navigation was set up in the app in this
-iteration. All of the RecyclerViews and their adapters were also skeletoned in preparation for when we have the data to populate
-those lists. The die roller functionality and character creation activities were the largest steps in app content this iteration.
+The Dice option will bring you to a view that allows you to roll a die. You can specify what type of die as well as how many to be rolled at once.
 
-We have encountered a lot of difficulties figuring out how to use git, manage a repository, and be a part of a project that 
-has multiple contributors.
+The Notes option gives you a textfield that will store whatever you wish to type into it.
 
-(Iteration 2)
-
-Completed Character Page, Save System, UserStory10_RaceSelection, UserStory1_ItemList, UserStory6_SpellSelection, UserStory5_FeatSelection, and UserStory2_AttributeGeneration user stores in this iteration. 
+The Character option will show you your class, race, ability scores, and physical features.
